@@ -1,4 +1,4 @@
-public abstract class Transport implements TransportService {
+public class Transport implements TransportService {
     private final String modelName;
     private final int wheelsCount;
 
@@ -13,5 +13,11 @@ public abstract class Transport implements TransportService {
 
     public String getModelName() {
         return modelName;
+    }
+
+    public void service(){
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            System.out.println("Меняем покрышку");
+        }
     }
 }

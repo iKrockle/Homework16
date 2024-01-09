@@ -4,8 +4,6 @@ public class Bicycle extends Transport{
     }
 
     public void service() {
-        for (int i = 0; i < this.getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");
-        }
+        super.service();
     }
 }
